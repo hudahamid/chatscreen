@@ -1,16 +1,15 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-
+import 'package:chatscreen/screen/chatscreen.dart';
 import 'package:chatscreen/screen/contact.dart';
 import 'package:chatscreen/screen/walk_through.dart';
 import 'package:chatscreen/screen/introduction.dart';
 import 'package:chatscreen/screen/contactscreen.dart';
-import 'package:chatscreen/screen/chatScreenv1.dart';
-
 
 void main() {
-  runApp(const  listState());
+  runApp(const contacts());
 }
+
 
 class Main extends StatelessWidget {
   const Main({Key? key}) : super(key: key);
@@ -30,6 +29,7 @@ class Main extends StatelessWidget {
           '/': (context) => Walkthrough(),
           '/a': (context) => introdution()
         },
-         );     //theme: isDark ? darkTheme : lightTheme);
-  }
+       // theme: isDark ? darkTheme : lightTheme);
+    );
+}
 }
